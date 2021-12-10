@@ -27,7 +27,7 @@ if __name__ == "__main__":
         host_door = random.choice(list(remain_doors))
         remain_doors.remove(host_door)
 
-        # remaining doors to choose, need to add goat door back when initial choice is not the car
+        # remaining doors to choose, need to add car door back when initial choice is not the car
         if switch_choice != car_door:
             remain_doors.add(car_door)
         switch_choice = random.choice(list(remain_doors))
